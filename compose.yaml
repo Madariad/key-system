@@ -1,0 +1,19 @@
+name: key-system
+services:
+  app:
+    platform: linux/amd64
+    build: .
+    init: true
+    restart: unless-stopped
+    environment:
+      APP_PASSWORD: ${APP_PASSWORD:?Run python configure.py first}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Run python configure.py first}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    ports:
+      - "127.0.0.1:${LOCAL_PORT:-3000}:8080"
+    volumes:
+      - app-data:/app/data
+    mem_limit: 1g
+    cpus: 1.5
+volumes:
+  app-data:

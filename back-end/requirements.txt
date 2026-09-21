@@ -1,0 +1,9 @@
+fastapi==0.115.12
+uvicorn==0.34.2
+numpy==1.26.4
+dlib-bin==19.24.6
+face-recognition-models==0.3.0
+Pillow==11.2.1
+click==8.1.8
+pyzbar==0.1.9
+setuptools<81

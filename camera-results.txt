@@ -1,0 +1,3 @@
+{"version": "4.11.0", "requested_backend": "CAP_ANY", "actual_backend": "MSMF", "opened": true, "frame": true, "shape": [480, 640, 3]}
+{"version": "4.11.0", "requested_backend": "CAP_MSMF", "actual_backend": "MSMF", "opened": true, "frame": true, "shape": [480, 640, 3]}
+{"version": "4.11.0", "requested_backend": "CAP_DSHOW", "actual_backend": "DSHOW", "opened": true, "frame": true, "shape": [480, 640, 3]}

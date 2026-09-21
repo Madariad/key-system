@@ -1,0 +1,10 @@
+.env
+.camera-check/
+.runtime/
+.venv/
+dist/
+**/__pycache__/
+**/data/
+**/node_modules/
+**/build/
+*.zip

@@ -1,0 +1,12 @@
+{"check": "status", "http": 200, "result": {"person": null, "cabinet": null, "status_message": "Бет пен QR-кодты көрсетіңіз..."}}
+{"check": "logs_initial", "http": 200, "result": {"logs": []}}
+{"check": "video", "http": 200, "result": 0}
+{"check": "missing_fields", "http": 200, "result": {"status": "error", "message": "Деректер толық емес!"}}
+{"check": "forged_identity_action", "http": 200, "result": {"status": "success", "person": "DOCKER_TEST", "cabinet": "TEST-101", "action": "arbitrary-action"}}
+{"check": "issue", "http": 200, "result": {"status": "success", "person": "DOCKER_TEST", "cabinet": "TEST-101", "action": "Кілтті алу (Выдан)"}}
+{"check": "return", "http": 200, "result": {"status": "success", "person": "DOCKER_TEST", "cabinet": "TEST-101", "action": "Кілтті өткізу (Сдан)"}}
+{"check": "logs_after_write", "http": 200, "result": {"logs": [[3, "DOCKER_TEST", "TEST-101", "Кілтті өткізу (Сдан)", "2026-09-21 10:40:45"], [2, "DOCKER_TEST", "TEST-101", "Кілтті алу (Выдан)", "2026-09-21 10:40:45"], [1, "DOCKER_TEST", "TEST-101", "arbitrary-action", "2026-09-21 10:40:45"]]}}
+{"check": "wrong_body_type", "http": 500, "result": "Internal Server Error"}
+{"check": "wrong_field_type", "http": 500, "result": "Internal Server Error"}
+{"check": "delete_without_auth", "http": 200, "result": {"status": "cleared"}}
+{"check": "logs_after_delete", "http": 200, "result": {"logs": []}}

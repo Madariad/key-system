@@ -1,0 +1,14 @@
+**/node_modules
+**/.git
+**/__pycache__
+**/*.db
+**/*.db-*
+**/data
+.camera-check
+.runtime
+.venv
+.env
+dist
+**/build
+*.zip
+*-results.*
